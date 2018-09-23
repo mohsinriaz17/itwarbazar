@@ -1,0 +1,19 @@
+export default {
+  container: {
+    paddingTop: 35,
+    flex: 1,
+	backgroundColor: 'gray',
+  },
+  separatorTop: {
+    marginBottom: 30,
+    height: 125,
+  },
+  sectionHeadingStyle: {
+    textAlign: 'center',
+    paddingVertical: 5,
+    paddingHorizontal: 5
+  },
+  button: {
+    backgroundColor: '#FF9F1C',
+  }
+};

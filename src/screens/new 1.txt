@@ -1,0 +1,13 @@
+<FlatList
+          numColumns={3}
+          data={this.props.photos}
+          renderItem={this._renderItem}
+          keyExtractor={item => item.node.image.uri}
+          onEndReachedThreshold={0.7}
+          onEndReached={() => {
+            //console.log('scroll end');
+            this.props.loadMore(this.props.page_info);
+          }}
+          getItemLayout={this.getItemLayout}
+          initialNumToRender={60}
+        />
